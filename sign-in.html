@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/book-512.png" type="image/png">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/overall-style.css">
+    <link rel="stylesheet" href="assets/style/profile.css">
+    <link rel="stylesheet" href="assets/style/registration.css">
+</head>
+
+<body>
+    <header class="box-header">
+        <div class="box-header__back">
+            <a class="box-header__link" href="index.html">
+                <img class="box-header__img" src="assets/images/chevron-left.svg" alt="icon">
+            </a>
+        </div>
+        <div class="box-header-buttons">
+            <div class="search">
+                <div class="search__icon">
+                    <input class="search__input" type="text" placeholder="Search . . ." required>
+                </div>
+            </div>
+            <div class="header-button">
+                <a class="header-button__link" href="">
+                    <img class="header-button__img" src="assets/images/header/icon-bascket.svg" alt="icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <form onsubmit="return false" class="form">
+                <div class="form__title">
+                    <h6>Log in to your profile</h6>
+                </div>
+                <div class="form__item">
+                    <input type="email" class="form__imput" id="email" placeholder="Email">
+                </div>
+                <div class="form__item">
+                    <input type="password" class="form__imput" id="password" placeholder="Password">
+                </div>
+                <div id="message"></div>
+                <button onclick="checkPassword()" type="submit" class="form__btn genre genre_blush-yellow">Log-in</button>
+                <div class="form__note">
+                    <div>
+                        Don't have a profile yet?
+                    </div>
+                    <div>
+                        <a class="link link_m" href="registration.html">Register now</a>
+                        <img src="assets/images/profile/link-arrow.svg" alt="link" class="link__arrow">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="box-footer-button">
+        <div class="footer-button">
+            <a class="footer-button__link" href="index.html">
+                <img class="footer-button__img" src="assets/images/footer/icon-home.svg" alt="icon">
+            </a>
+            <div class="footer-button__title">home</div>
+        </div>
+        <div class="footer-button">
+            <a class="footer-button__link" href="purchased-books.html">
+                <img class="footer-button__img" src="assets/images/footer/icon-browse.svg" alt="icon">
+            </a>
+            <div class="footer-button__title">browse</div>
+        </div>
+        <div class="footer-button">
+            <a class="footer-button__link" href="wishlist-books.html">
+                <img class="footer-button__img" src="assets/images/footer/icon-wishlist.svg" alt="icon">
+            </a>
+            <div class="footer-button__title">wishlist</div>
+        </div>
+        <div class="footer-button footer-button_active">
+            <a class="footer-button__link" href="sign-in.html">
+                <img class="footer-button__img" src="assets/images/footer/icon-profile.svg" alt="icon">
+            </a>
+            <div class="footer-button__title">profile</div>
+        </div>
+    </footer>
+    <script src="assets/src/sign-in.js"></script>
+    <script></script>
+</body>
+
+</html>

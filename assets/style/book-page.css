@@ -1,0 +1,152 @@
+.book-page__cover {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.book-page {
+    text-align: center;
+    margin: 0 1.5rem;
+}
+
+.book-page__title {
+    margin: 0 auto 0.3rem;
+}
+
+.book-page__type {
+    margin: 0.3em auto;
+
+    font-size: 0.75em;
+
+    color: #828282;
+}
+
+.book-page__price {
+    margin: 1rem auto;
+}
+
+.book-page__description {
+    line-height: 1.5rem;
+    letter-spacing: 0.08rem
+}
+
+.link {
+    color: #53889D;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5em;
+
+    width: 60%;
+
+    margin: 1.4rem auto;
+}
+
+.buttons__cart,
+.buttons__wishlist {
+    height: 3em;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 0.5em;
+
+    color: white;
+
+    transition: 0.5s;
+}
+
+.buttons__cart {
+    background-color: #D96F6E
+}
+
+.buttons__wishlist {
+    background-color: #F3A492;
+}
+
+.publishing {
+    text-align: center;
+    color: #828282;
+    font-size: 0.75em;
+}
+
+.book-genres {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    margin: 0 auto;
+}
+
+.book-genres__title {
+    grid-area: 1/1/2/3;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: #4F4F4F;
+
+    margin: 1.2rem 0 0.5rem 0;
+}
+
+.genre_yellow-pink {
+    grid-area: 2/1/3/2;
+}
+
+.genre_blue-baby {
+    grid-area: 2/2/3/3;
+}
+
+.share {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: repeat(5, 1fr);
+
+    margin-top: 2rem;
+    margin: 0 auto;
+}
+
+.share__title {
+    grid-area: 1/1/2/6;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: #4F4F4F
+}
+
+.share-icon {
+    margin: 5px;
+    width: 2.7rem;
+    transition: 0.5s;
+}
+
+.share-icon:hover {
+    border-radius: 45%;
+    transform: scale(1.05);
+    filter: invert(1) sepia(4) saturate(4) hue-rotate(0deg) brightness(140%) contrast(100%);
+}
+
+.books-type-title {
+    margin-left: 1.5rem;
+}
+
+.books-wrapper {
+    width: 100%;
+    min-height: 5rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.books-line {
+    display: flex;
+    margin-left: 1.5rem;
+}

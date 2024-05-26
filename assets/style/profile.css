@@ -1,0 +1,141 @@
+.avatar__wrap {
+    margin: 0 auto;
+}
+
+.avata {
+    width: 16vh;
+    max-width: 200px;
+    height: 16vh;
+
+    clip-path: ellipse(45% 45% at 50% 50%);
+}
+
+.title {
+    text-align: center;
+}
+
+.title__name {
+    line-height: 0.5em;
+}
+
+.title__location {
+    font-size: 0.62em;
+    font-weight: 400;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+.wrap-follow-box {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    margin-bottom: 1rem;
+}
+
+.follow-box {
+    padding-top: 0.7em;
+
+}
+
+.follow-box__title {
+    font-size: 0.62em;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.follow-box__number {
+    font-size: 1.25em;
+    font-weight: 700;
+
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.favorite-genres {
+    padding-bottom: 1rem;
+}
+
+.favorite-genres__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+
+}
+
+.books-box__title {
+    display: flex;
+    align-content: center;
+}
+
+.books-box__num {
+    font-size: 0.75em;
+
+    color: #53889D;
+}
+
+.books-wrapper {
+    width: 100%;
+    min-height: 5rem;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.books-line {
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+.books-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.books-area {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.25rem;
+    justify-content: center;
+
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.books-area__frame {
+    max-width: 150px;
+    padding: 0.1rem;
+
+    filter: drop-shadow(1px 1px 10px rgba(78, 55, 55, 0.2));
+}
+
+.wrap__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    padding-right: 0.4em;
+
+    font-size: 0.75em;
+    font-weight: 600;
+
+    text-align: center;
+    text-decoration: underline;
+    color: #D96F6E;
+}
+
+h6 {
+    margin: 1em 0;
+}
+
+p {
+    margin: 1.5em 1em;
+}
+
+.favorite-genres,
+.books-box__title {
+    margin: 0 1.5rem;
+}

@@ -1,0 +1,218 @@
+h3 {
+    margin: 1.5rem;
+}
+
+/*greeting*/
+.title {
+    display: flex;
+    flex-direction: column;
+
+    max-width: fit-content;
+    margin-left: 1.5rem;
+}
+
+.title__greeting {
+    line-height: 125%;
+}
+
+.title__text {
+    font-weight: 400;
+    line-height: 150%;
+}
+
+span {
+    font-weight: bolder;
+}
+
+/*lists of the books*/
+
+.pop-lists__title h3 {
+margin-bottom: 0.4em;
+}
+
+.list-wrapper {
+    width: 100%;
+    min-height: 130px;
+
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.list-line {
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.list-card {
+    display: grid;
+
+    min-width: 220px;
+    max-width: 225px;
+    min-height: 130px;
+
+    box-shadow: 1px 1px 10px rgba(78, 55, 55, 0.2);
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.list-card_2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+
+    align-items: center;
+
+    background: radial-gradient(50% 50% at 50% 50%, #DEE9ED 0%, rgba(255, 255, 255, 0) 100%), #CEDEE4;
+}
+
+.list-card_1 {
+    background: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.list-card_1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/home-page/top10mask.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+.list-card_3 {
+    background: radial-gradient(circle, rgba(174, 235, 238, 1) 0%, rgba(112, 111, 227, 1) 100%);
+}
+
+.list-card_4 {
+    background: linear-gradient(90deg, rgba(238, 174, 210, 1) 0%, rgba(227, 151, 111, 1) 100%);
+    ;
+}
+
+h6,
+.list-card__icon {
+    justify-self: start;
+    align-self: end;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1rem
+}
+
+h2 {
+    align-self: center;
+    margin: 0px;
+}
+
+.list-card__icon_left {
+    grid-column: 1;
+    grid-row: 1/4;
+    justify-self: center;
+    align-self: center;
+    margin-left: 0px;
+}
+
+.list-card__icon_right {
+    grid-column: 3;
+    grid-row: 1/4;
+    justify-self: center;
+    align-self: center;
+    margin-left: 0px;
+}
+
+.list-card__title_sm-white {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+.list-card__title_sm-white,
+.list-card__title_lg-white {
+    z-index: 2;
+    color: #ffffff;
+}
+
+.list-card__title_center {
+    margin: 0px;
+
+    color: #D96F6E;
+}
+
+.list-card__title_top,
+.list-card__title_bottom {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: 700;
+
+    margin: 0px;
+
+    background-image: linear-gradient(90deg, #D96F6E 0%, #F2D05C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list-card__title_top {
+    align-self: end;
+}
+
+.list-card__title_bottom {
+    align-self: start;
+}
+
+/*top 10 most popular authors*/
+.authors-wrapper {
+    width: 100%;
+    min-height: 100px;
+
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.authors-card {
+    min-width: 70px;
+}
+
+.authors-card__name {
+    line-height: 140%;
+}
+
+/*popular genres*/
+.pop-genre-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    text-align: center;
+}
+
+.pop-genre__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 70px;
+    min-height: 70px;
+
+    box-shadow: 1px 1px 10px rgba(78, 55, 55, 0.1);
+    border-radius: 8px;
+}
+
+.pop-genre__title {
+    line-height: 140%;
+}
+
+.box-header__title {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
